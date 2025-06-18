@@ -1,0 +1,3 @@
+loanId,userId,bookId,loanDate,dueDate,returnDate
+L0001,admin,1000002,2025-06-09,2025-06-23,2025-06-09
+L0002,dankook,1000003,2025-06-10,2025-06-24,null
