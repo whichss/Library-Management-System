@@ -43,7 +43,7 @@ public class BookEdit extends JDialog {
         titleLabel.setForeground(Color.BLACK);
         titleLabel.setBorder(BorderFactory.createEmptyBorder(0, 0, 20, 0));
         
-        // 입력 폼 (ISBN 제거됨)
+        // 입력 폼
         JPanel formPanel = new JPanel(new GridLayout(9, 2, 10, 10));
         formPanel.setBackground(Color.WHITE);
         

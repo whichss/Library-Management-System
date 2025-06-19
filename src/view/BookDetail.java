@@ -59,7 +59,7 @@ public class BookDetail extends JFrame {
         infoPanel.setBackground(Color.WHITE);
         infoPanel.setPreferredSize(new Dimension(600, 450));
         
-        // 정보 라벨들 추가 (ISBN 제거됨)
+        // 정보 라벨들 추가
         addInfoField(infoPanel, "바코드:", barcodeLabel = new JLabel());
         addInfoField(infoPanel, "청구기호:", callNumberLabel = new JLabel());
         addInfoField(infoPanel, "제목:", titleLabel = new JLabel());

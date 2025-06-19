@@ -17,7 +17,7 @@ public class CsvInOut {
         new File("data").mkdir();
     }
     
-    // 사용자 읽기 (인코딩 수정됨)
+    // 사용자 읽기
     public List<User> readUsers() {
         List<User> users = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(
@@ -89,7 +89,7 @@ public class CsvInOut {
         return users;
     }
     
-    // 사용자 저장 (인코딩 수정됨)
+    // 사용자 저장
     public void saveUsers(List<User> users) {
         try (PrintWriter writer = new PrintWriter(
                 new OutputStreamWriter(new FileOutputStream(USER_FILE), StandardCharsets.UTF_8))) {
@@ -113,7 +113,7 @@ public class CsvInOut {
         }
     }
     
-    // 도서 읽기 (인코딩 수정됨)
+    // 도서 읽기
     public List<Book> readBooks() {
         List<Book> books = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(
@@ -140,7 +140,7 @@ public class CsvInOut {
         return books;
     }
     
-    // 도서 저장 (인코딩 수정됨)
+    // 도서 저장
     public void saveBooks(List<Book> books) {
         try (PrintWriter writer = new PrintWriter(
                 new OutputStreamWriter(new FileOutputStream(BOOK_FILE), StandardCharsets.UTF_8))) {
@@ -153,7 +153,7 @@ public class CsvInOut {
         }
     }
     
-    // 대출 읽기 (인코딩 수정됨)
+    // 대출 읽기
     public List<Loan> readLoans() {
         List<Loan> loans = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(
@@ -172,7 +172,7 @@ public class CsvInOut {
         return loans;
     }
     
-    // 대출 저장 (인코딩 수정됨)
+    // 대출 저장
     public void saveLoans(List<Loan> loans) {
         try (PrintWriter writer = new PrintWriter(
                 new OutputStreamWriter(new FileOutputStream(LOAN_FILE), StandardCharsets.UTF_8))) {
@@ -185,7 +185,7 @@ public class CsvInOut {
         }
     }
     
-    // 빈 파일 생성 (인코딩 수정됨)
+    // 빈 파일 생성
     private void createUserFile() {
         try (PrintWriter writer = new PrintWriter(
                 new OutputStreamWriter(new FileOutputStream(USER_FILE), StandardCharsets.UTF_8))) {

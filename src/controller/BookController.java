@@ -1,13 +1,12 @@
 package controller;
 
+import java.awt.event.ActionEvent;
+import java.util.List;
+import model.Admin;
 import model.Book;
 import model.Library;
 import model.Member;
-import model.Admin;
 import view.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
 
 public class BookController {
     private Library library;
@@ -108,7 +107,7 @@ public class BookController {
     }
     
     private void addBook(ActionEvent e) {
-        // 입력값 가져오기 및 검증 (ISBN 제거됨)
+        // 입력값 가져오기 및 검증
         String title = bookManageView.getBookTitle().trim();
         String author = bookManageView.getAuthor().trim();
         String publisher = bookManageView.getPublisher().trim();
@@ -131,7 +130,7 @@ public class BookController {
             return;
         }
         
-        // 새 도서 생성 및 추가 (청구기호 자동 생성, ISBN 제거됨)
+        // 새 도서 생성 및 추가
         Book newBook = new Book(title, author, publisher, year, category, price);
         List<String> addedBarcodes = library.addBooks(newBook, quantity);
         

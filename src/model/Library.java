@@ -51,7 +51,7 @@ public class Library {
         }
     }
     
-    // 새 도서 추가 (수량 지원)
+    // 새 도서 추가
     public List<String> addBooks(Book book, int quantity) {
         List<String> addedBarcodes = new ArrayList<>();
         
@@ -122,7 +122,7 @@ public class Library {
         return new ArrayList<>(bookList);
     }
     
-    // 도서 검색 (다양한 조건, ISBN 제거됨)
+    // 도서 검색
     public List<Book> searchBooks(String keyword, String searchType) {
         List<Book> result = new ArrayList<>();
         keyword = keyword.toLowerCase();
